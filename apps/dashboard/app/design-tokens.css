@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700;800;900&family=IBM+Plex+Mono:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap");
+
+:root {
+  --rh-font-brand: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  --rh-font-console: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --rh-font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+  --rh-font-audit-display: "Archivo", ui-sans-serif, system-ui, sans-serif;
+  --rh-font-audit-body: "Work Sans", ui-sans-serif, system-ui, sans-serif;
+
+  --ink: #10201d;
+  --muted: #60716a;
+  --line: #d9ded4;
+  --paper: #f5f1e6;
+  --paper-strong: #fff9eb;
+  --field: #dae7d6;
+  --accent: #bd5538;
+  --accent-dark: #843421;
+  --pine: #153c31;
+  --gold: #d8ad63;
+  --shadow: 0 28px 80px rgba(32, 37, 28, 0.14);
+
+  --rh-radius-sm: 0.35rem;
+  --rh-radius-md: 0.45rem;
+  --rh-radius-pill: 999px;
+  --rh-section-x: clamp(1rem, 4vw, 3.5rem);
+  --rh-section-y: clamp(4.5rem, 9vw, 8rem);
+  --rh-hero-y: clamp(4rem, 8vw, 7rem);
+}

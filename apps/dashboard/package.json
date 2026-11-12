@@ -1,0 +1,33 @@
+{
+  "name": "@requesthandoff/dashboard",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "build": "pnpm --filter @requesthandoff/schema build && pnpm --filter @requesthandoff/supabase-client-rls build && pnpm --filter @requesthandoff/supabase-client-service build && pnpm --filter @requesthandoff/outbound-webhook build && next build",
+    "dev": "next dev --turbo",
+    "start": "next start",
+    "test": "vitest run --passWithNoTests",
+    "typecheck": "tsc --noEmit",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@requesthandoff/outbound-webhook": "workspace:*",
+    "@requesthandoff/schema": "workspace:*",
+    "@requesthandoff/supabase-client-rls": "workspace:*",
+    "@requesthandoff/supabase-client-service": "workspace:*",
+    "@supabase/ssr": "^0.5.1",
+    "@supabase/supabase-js": "^2.45.4",
+    "next": "^15.0.2",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "retell-client-js-sdk": "^2.0.8",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "eslint-config-next": "^15.0.2",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

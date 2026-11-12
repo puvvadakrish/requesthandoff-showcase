@@ -1,0 +1,35 @@
+{
+  "name": "requesthandoff",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Integration-neutral AI receptionist for small local businesses (Austin metro). MVP build per docs/plans/2026-05-04-001-feat-requesthandoff-mvp.md",
+  "license": "UNLICENSED",
+  "packageManager": "pnpm@9.12.3",
+  "engines": {
+    "node": ">=20.11.0",
+    "pnpm": ">=9.0.0"
+  },
+  "scripts": {
+    "build": "turbo run build",
+    "dev": "turbo run dev",
+    "test": "turbo run test",
+    "typecheck": "turbo run typecheck",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "fixture:call-ended": "pnpm --filter @requesthandoff/schema build && pnpm --filter @requesthandoff/supabase-client-service build && pnpm --filter @requesthandoff/voice build && pnpm --filter @requesthandoff/post-call build && node scripts/local-call-ended-fixture.mjs",
+    "fixture:call-ended:supabase": "pnpm --filter @requesthandoff/schema build && pnpm --filter @requesthandoff/supabase-client-service build && pnpm --filter @requesthandoff/voice build && pnpm --filter @requesthandoff/post-call build && node scripts/local-call-ended-fixture.mjs --supabase",
+    "demo:readiness": "node scripts/demo-readiness-check.mjs",
+    "db:migrate": "supabase migration up",
+    "db:reset": "supabase db reset"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.10",
+    "eslint": "^9.13.0",
+    "eslint-plugin-import": "^2.31.0",
+    "prettier": "^3.3.3",
+    "turbo": "^2.2.3",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.4"
+  }
+}

@@ -1,0 +1,60 @@
+# OS noise
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+.obsidian/
+.tmp/
+*.swp
+*.swo
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+credentials.json
+service-account*.json
+
+# Node / TS (will be relevant when code lands)
+node_modules/
+.next/
+.turbo/
+dist/
+build/
+out/
+*.tsbuildinfo
+.pnpm-store/
+
+# Python (if any tooling lands)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# direnv
+.envrc
+
+# Logs
+*.log
+logs/
+
+# Local Claude/Cursor session state (never commit)
+.claude/
+.cursor/
+
+# RequestHandoff local runtime artifacts (exact paths; never commit)
+/.render-voice-image-tag
+/.supabase-hosted-runtime.env
+/.supabase-hosted.env
+/.vercel-production-runtime.env
+/.vercel-render-check.env
+
+# Compound Engineering per-checkout config (examples remain trackable)
+/.compound-engineering/*.local.yaml
+
+# OS-specific
+*.iml
