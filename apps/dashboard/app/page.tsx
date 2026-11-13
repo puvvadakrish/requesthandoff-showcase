@@ -121,7 +121,7 @@ export default function HomePage() {
             <dl>
               <div>
                 <dt>Caller</dt>
-                <dd>Sample owner quote (illustrative)</dd>
+                <dd>Sample caller, Austin</dd>
               </div>
               <div>
                 <dt>Urgency</dt>
